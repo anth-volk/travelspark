@@ -4,7 +4,8 @@
   "description": "Monorepo for the front and back ends of TravelSpark, an AI-powered travel application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/anth-volk/travelspark#readme",
   "devDependencies": {
+    "auto-changelog": "^2.4.0",
     "create-react-app": "^5.0.1",
     "nodemon": "^3.0.1",
     "sequelize-cli": "^6.6.1"
