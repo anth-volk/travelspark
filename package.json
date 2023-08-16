@@ -1,11 +1,11 @@
 {
   "name": "travelspark",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Monorepo for the front and back ends of TravelSpark, an AI-powered travel application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"version": "auto-changelog -p && git add CHANGELOG.md"
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
