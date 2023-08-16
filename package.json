@@ -1,6 +1,6 @@
 {
   "name": "travelspark",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Monorepo for the front and back ends of TravelSpark, an AI-powered travel application",
   "main": "index.js",
   "scripts": {
