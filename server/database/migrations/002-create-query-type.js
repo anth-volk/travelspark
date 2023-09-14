@@ -7,7 +7,7 @@ module.exports = {
 				allowNull: false,
 				unique: true,
 				primaryKey: true,
-				type: Sequelize.UUID
+				type: Sequelize.INTEGER
 			},
 			query_type: {
 				type: Sequelize.STRING

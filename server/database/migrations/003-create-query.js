@@ -26,7 +26,13 @@ module.exports = {
 				type: Sequelize.TEXT
 			},
 			query_type_id: {
-				type: Sequelize.INTEGER
+				type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: 'Query_Type'
+          },
+          key: 'query_type_id'
+        }
 			},
 			tokens_used: {
 				type: Sequelize.BIGINT
