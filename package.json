@@ -2,9 +2,11 @@
   "name": "travelspark",
   "version": "0.0.2",
   "description": "Monorepo for the front and back ends of TravelSpark, an AI-powered travel application",
-  "main": "index.js",
+  "main": "/server/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "server:dev": "nodemon ./server/app.js",
+    "server:prod": "export NODE_ENV=production; node ./server/app.js",
     "version": "auto-changelog -p && git add CHANGELOG.md",
     "db:create": "sequelize-cli db:create",
     "db:migrate": "sequelize-cli db:migrate",
@@ -36,6 +38,7 @@
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
