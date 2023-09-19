@@ -16,6 +16,7 @@ module.exports = {
 		'Query_Type', 
 		[
 			{
+        query_type_id: 0,
 				query_type: 'Testing query for v0.0.3',
 				createdAt: new Date(),
 				updatedAt: new Date()

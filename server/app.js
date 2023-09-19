@@ -17,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 
 // TODO: Route imports
+const queryRoutes = require('./routes/queryRt.js');
 
 // ORM import
 const { DatabaseWrapper } = require('./database/databaseWrapper.js')
@@ -28,6 +29,9 @@ const db = new DatabaseWrapper('development');
 // TODO: Update CORS config when necessary
 app.use(cors());
 app.use(bodyParser.json());
+
+// Routes
+app.use('/api/v1/query', queryRoutes);
 
 app.listen(port, (err) => {
   if (err) {
