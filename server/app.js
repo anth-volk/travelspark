@@ -19,9 +19,10 @@ app.use(express.static(__dirname));
 // TODO: Route imports
 
 // ORM import
-const { Sequelize } = require('sequelize');
+const { DatabaseWrapper } = require('./database/databaseWrapper.js')
 
 // TODO: ORM config (ideally in separate file of some sort)
+const db = new DatabaseWrapper('development');
 
 // Middleware
 // TODO: Update CORS config when necessary
