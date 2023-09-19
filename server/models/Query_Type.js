@@ -17,7 +17,8 @@ module.exports = (sequelize) => {
 		query_type_id: {
 			primaryKey: true,
 			type: DataTypes.INTEGER,
-			allowNull: false
+			allowNull: false,
+      autoIncrement: true
 		},
 		query_type: {
 			type: DataTypes.STRING
